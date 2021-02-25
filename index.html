@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="content-side">
+                <div class="content-side-animation"></div>
+                <header>
+                    <span class="logo" id="logo">D.Lobotskiy</span>
+                    <nav>
+                        <ul>
+                            <li><a href="#" id="aboutLink">About</a></li>
+                            <li><a href="#" id="skillsLink">Skills</a></li>
+                            <li><a href="#" id="contactLink">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <section class="main " id="main">
+                    <h1 class="main-animation">Hi,</h1>
+                    <h1 class="main-animation">I'm Dima,</h1>
+                    <h1 class="main-animation">Front-end developer.</h1>
+                    <p class="lover-case">HTML / CSS / JavaScript</p>
+                    <a href="#" class="main-animation">Contact Me</a>
+                </section>
+
+                <section class="about" id="about">
+                    <h1>About</h1>
+                    <p>Determined and productive web developer with a passion for creative solutions. Dedicated to
+                        learning additional technologies and coding languages. </p>
+                    <a href="#">Download CV</a>
+                </section>
+
+                <section class="skills" id="skills">
+                    <h1>Skills</h1>
+                    <p>HTML: - Basic tags, Forms, Semantics, Images, Attributes.<br>
+                        CSS: - Properties, Selectors, Units, Specificity, Colors, Box Model, Positions, Responsive Web
+                        Design.<br>
+                        JavaScript: - Variables, Functions, Objects, Object-oriented programming, Prototypes,
+                        Constructors, Arrays, Error handling, DOM, Events.</p>
+                    <div class="skills-card">
+                        <div class="html">
+                            <img src="./img/html.png" alt="">
+                            <h3>html</h3>
+                            <p>6 month Experience</p>
+                        </div>
+                        <div class="css">
+                            <img src="./img/css.png" alt="">
+                            <h3>css</h3>
+                            <p>6 month Experience</p>
+                        </div>
+                        <div class="javascript">
+                            <img src="./img/javascript.png" alt="">
+                            <h3>javascript</h3>
+                            <p>6 month Experience</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact" id="contact">
+                    <h1>Contact Me</h1>
+                    <form action="">
+                        <input type="text" placeholder="Full name" />
+                        <input type="email" placeholder="Email" />
+                        <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </section>
+            </div>
+
+            <div class="assets-side">
+                <div class="img">
+                    <img src="./img/photo.jpg" alt="">
+                </div>
+                <div class="links">
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+                    <div class="telegram">
+                        <a href="https://web.telegram.org"><i class='bx bxl-telegram'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="open-modal">
+        <a class="example-btn">+</a>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h1>Personal Contact Details</h1>
+            <div class="mail">
+                <img src="./img/email.svg" alt="">
+                <p>lobotskiy09@gmail.com</p>
+            </div>
+            <div class="address">
+                <img src="./img/map.svg" alt="">
+                <p>Lviv, Ukraine</p>
+            </div>
+            <div class="contact-details">
+                <img src="./img/phone.svg" alt="">
+                <p>tel. 063-58-53-510</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

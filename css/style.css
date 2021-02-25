@@ -1,0 +1,389 @@
+:root{
+    --white: #ffff;
+    --logoColor: #e4405f;
+    --navLinksColor: #252627;
+    --sectionH1Color:#0088cc;
+    --btnColor: #3b5999;
+    --mainParaColor: #ed5565;
+    --sectionParaColor: #050607;
+    --skillsCardColor: #4fc1e9;
+    --skillsH3Color: #3c3d3d;
+    --inputBorderColor: #656d78;
+    --sdColor:#9e9e9e;
+    --facebookBgColor: #3b5999;
+    --linkedinBgColor: #55acee;
+    --instagramBgColor: #e4405f;
+    --telegramBgColor:#0088cc;
+    --profileBgColor:#edecee;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Goldman', cursive;
+font-family: 'Josefin Sans', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    height: 100vh;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.content-side{
+    padding-left: 60px;
+}
+
+
+header,
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+header{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.logo{
+    padding-right: 150px;
+    font-size: 3rem;
+    font-weight: 850;
+    line-height: 70px;
+    color: var(--logoColor);
+    cursor: pointer;
+}
+nav li{
+    margin-right: 40px;
+    font-size: 1.4rem;
+    line-height: 70px;
+}
+
+li a{
+    color: var(--navLinksColor);
+}
+li a:hover{
+    color: var(--logoColor);
+}
+.main h1{
+    margin-bottom: 20px;
+}
+.main,.about{
+    padding: 100px 0 0 50px;
+    position: absolute;
+
+}
+.about,
+.skills,
+.contact{
+    opacity: 0;
+}
+.main h1{
+    font-size: 3rem;
+    color: var(--sectionH1Color);
+}
+.about h1,
+.skills h1,
+.contact h1{
+    font-size: 4rem;
+    color: var(--sectionH1Color);
+    
+}
+
+p.lover-case{
+    margin-top: 5px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: .9rem;
+    color: var(--logoColor);
+    margin-bottom: 50px;
+   
+}
+
+.main a,
+.about a,
+.contact button{
+    color: var(--white);
+    background-color: var(--btnColor);
+    padding: 10px 30px;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    
+}
+.contact button:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 40px -10px rgba(5, 5, 5, 0.70);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.70);
+    transition: all 0.4s ease 0s;
+}
+.about h1,
+.skills h1,
+.contact h1{
+    margin-bottom: 4rem;
+}
+
+.about p,
+.skills > p{
+    max-width: 600px;
+    font-size: 1.4rem;
+    color: var(--sectionParaColor);
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.about,
+.skills,
+.contact{
+    padding: 50px 0 0 50px;
+    position: absolute;
+}
+.skills-card{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 700px;
+}
+.skills-card div{
+    /* letter-spacing: 3px; */
+    border: 3px solid var(--skillsCardColor);
+    padding: 20px;
+    margin: 5px 20px;
+    position: relative;
+}
+.skills-card div::after{
+    content: '';
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--skillsCardColor);
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.skills-card div:hover::after{
+    height: 100%;
+}
+.skills-card div:hover p{
+     color: var(--white);
+}
+
+.skills-card div:first-child{
+    margin-left: 6%;
+}
+.skills-card p{
+    max-width: 100px;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: var(--sectionParaColor);
+    font-weight: 600;
+}
+
+.skills img{
+    width:80px;
+}
+.skills h3{
+    text-transform: uppercase;
+    color: var(--skillsH3Color);
+    margin-top: 10px;
+}
+
+form{
+    max-width: 500px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--inputBorderColor);
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--inputBorderColor);
+}
+button{
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:focus,
+.input:focus,
+textarea:focus{
+    outline: none;
+}
+.main-animation{
+    animation: animate 1s;
+}
+
+@keyframes animate{
+    from{
+        margin-top: 30px;
+    }
+    to{
+        margin-top: 0;
+    }
+}
+
+@-webkit-keyframes animate{ 
+    from{
+        margin-top: 30px;
+    }
+    to{
+        margin-top: 0;
+    }
+}
+
+/* ////////////////////////// ASSETS SIDE ////////////////////////////// */
+.assets-side{
+    display: grid;
+    grid-template-columns: 1fr .15fr;
+
+}
+
+.assets-side img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+  
+}
+.facebook,.linkedin,.instagram,.telegram{
+    height: calc(100% / 4);
+}
+
+.facebook{
+    background-color: var(--facebookBgColor);
+}
+.linkedin{
+    background-color: var(--linkedinBgColor);
+}
+.instagram{
+    background-color: var(--instagramBgColor);
+}
+.telegram{
+    background-color: var(--telegramBgColor);
+}
+
+.links a{
+    writing-mode: vertical-rl;
+    color: var(--white);
+    height: calc(100% / 4);
+    width: 100%;
+    text-align: center;
+    padding-right: 22px;
+}
+.bx{
+    font-size: 2.8rem;
+   
+}
+.bx:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+}
+/* ///////////////////////////// OPEN MODAL /////////////////////// */
+.open-modal {
+    position: absolute;
+    top: 44%;
+    left: 52%;
+    font-size: 3rem;
+    cursor: pointer; 
+    text-align: center;
+}
+.example-btn {
+    color: #fff !important;
+    background-color: var(--btnColor);
+    padding: 14px 25px;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.4s ease 0s;
+    }
+
+.example-btn:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 40px -10px rgba(5, 5, 5, 0.70);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.70);
+    transition: all 0.4s ease 0s;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .75);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear .25s opacity .25s 0s, transform .25s;
+
+}
+.modal-content{
+    background-color: var(--white);
+    position: absolute;
+    padding: 20px 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.modal-content h1{
+    color: var(--sectionH1Color);
+    font-weight: 300;
+    padding: 30px 0 10px 0;
+    
+}
+
+.modal-content div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-content img{
+    width: 40px;
+    margin: 0 30px 20px 0;
+}
+
+.modal-content p{
+    margin-top: 10px;
+}
+
+.close-modal{
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: visibility 0s linear 0s, opacity .25s 0, transform .25s;
+}
+  
